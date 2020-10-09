@@ -1,4 +1,4 @@
-(function() {
+(() => {
   const array = [
     [
         "Beroende på",
@@ -206,7 +206,7 @@
 
     buzzphraseElement.innerHTML = ['"', generateBuzzphrase().trim(), '"'].join('')
 
-    generateBuzzphraseElement.addEventListener("click", function() {
+    generateBuzzphraseElement.addEventListener("click", () => {
       buzzphraseElement.innerHTML = ['"', generateBuzzphrase().trim(), '"'].join('')
     })
   }
